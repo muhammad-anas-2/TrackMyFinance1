@@ -8,6 +8,18 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap/dist/css/bootstrap'
+require("stylesheets/application.scss")
+
+
+require("bootstrap")
+
+$(document).on('turbolinks:load', function() {
+    $(".dropdown-toggle").dropdown('toggle');
+
+});
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
